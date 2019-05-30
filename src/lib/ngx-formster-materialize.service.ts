@@ -1,3 +1,4 @@
+import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
 import { FormSwitchComponent } from './form-switch/form-switch.component';
 import { FormInputComponent } from './form-input/form-input.component';
 import { Injectable } from '@angular/core';
@@ -17,6 +18,10 @@ export class NgxFormsterMaterializeService extends NgxFormsterComponentProvider 
       {
         type: 'switch',
         component: FormSwitchComponent,
+      },
+      {
+        type: 'checkbox',
+        component: FormCheckboxComponent,
       },
     ];
   }

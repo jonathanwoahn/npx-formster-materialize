@@ -5,15 +5,20 @@ import { NGX_FORMSTER, NgxFormsterModule } from 'ngx-formster';
 import { NgxFormsterMaterializeService } from './ngx-formster-materialize.service';
 import { ReactiveFormsModule, } from '@angular/forms';
 import { FormSwitchComponent } from './form-switch/form-switch.component';
+import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
+import { FormSelectComponent } from './form-select/form-select.component';
 
 const COMPONENTS = [
   FormInputComponent,
   FormSwitchComponent,
+  FormCheckboxComponent,
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
+    FormCheckboxComponent,
+    FormSelectComponent,
   ],
   entryComponents: [
     ...COMPONENTS,

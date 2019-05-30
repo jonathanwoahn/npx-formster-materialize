@@ -1,0 +1,8 @@
+<div class="input-field" [formGroup]="formGroup">
+  <p>
+    <label>
+      <input id="indeterminate-checkbox" type="checkbox" [formControl]="formGroup.controls[config.key]">
+      <span *ngIf="options.label">{{options.label}}</span>
+    </label>
+  </p>
+</div>
