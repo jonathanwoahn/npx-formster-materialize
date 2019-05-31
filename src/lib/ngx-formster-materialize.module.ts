@@ -7,18 +7,19 @@ import { ReactiveFormsModule, } from '@angular/forms';
 import { FormSwitchComponent } from './form-switch/form-switch.component';
 import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
 import { FormSelectComponent } from './form-select/form-select.component';
+import { FormTextareaComponent } from './form-textarea/form-textarea.component';
 
 const COMPONENTS = [
   FormInputComponent,
   FormSwitchComponent,
   FormCheckboxComponent,
+  FormTextareaComponent,
+  FormSelectComponent,
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    FormCheckboxComponent,
-    FormSelectComponent,
   ],
   entryComponents: [
     ...COMPONENTS,
