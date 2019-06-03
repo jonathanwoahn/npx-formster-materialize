@@ -1,12 +1,15 @@
 <div class="input-field" [formGroup]="formGroup">
-  <select #select [formControl]="formGroup.controls[config.key]" [multiple]="!!options.multiple">
-    <option selected>{{options.defaultLabel || 'Select an option'}}</option>
+  <select #select [formControl]="formGroup.controls[config.key]" *ngIf="!!options.multiple" multiple>
+    <option selected="selected" disabled hidden value="">{{options.defaultLabel || 'Select an option'}}</option>
     <option *ngFor="let option of options.options" [value]="option[options.valueProp]">
       {{option[options.labelProp]}}
     </option>
-    <!-- <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option> -->
+  </select>
+  <select #select [formControl]="formGroup.controls[config.key]" *ngIf="!options.multiple">
+    <option selected="selected" disabled hidden value="">{{options.defaultLabel || 'Select an option'}}</option>
+    <option *ngFor="let option of options.options" [value]="option[options.valueProp]">
+      {{option[options.labelProp]}}
+    </option>
   </select>
   <label *ngIf="options.label">{{options.label}}</label>
 </div>

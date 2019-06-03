@@ -8,6 +8,7 @@ import { FormSwitchComponent } from './form-switch/form-switch.component';
 import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
 import { FormSelectComponent } from './form-select/form-select.component';
 import { FormTextareaComponent } from './form-textarea/form-textarea.component';
+import { FormAutocompleteComponent } from './form-autocomplete/form-autocomplete.component';
 
 const COMPONENTS = [
   FormInputComponent,
@@ -15,6 +16,7 @@ const COMPONENTS = [
   FormCheckboxComponent,
   FormTextareaComponent,
   FormSelectComponent,
+  FormAutocompleteComponent,
 ];
 
 @NgModule({

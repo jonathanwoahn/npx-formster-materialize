@@ -1,0 +1,16 @@
+<div class="input-field">
+  <i class="material-icons prefix" *ngIf="options.prefixIcon">{{options.prefixIcon}}</i>
+  <input
+    type="text"
+    [id]="id"
+    class="autocomplete"
+    (keyup)="keyup(autocomplete.value)"
+    #autocomplete
+    [formControl]="formGroup.controls[config.key]">
+  <label [for]="id" *ngIf="options.label">{{options.label}}</label>
+  <span class="helper-text">
+    <ngx-formster-error-message [control]="formGroup.controls[config.key]">
+      {{options.leftHelperText}}
+    </ngx-formster-error-message>
+  </span>
+</div>

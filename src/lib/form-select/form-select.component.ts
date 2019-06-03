@@ -18,8 +18,6 @@ export class FormSelectComponent extends BaseFormElementComponent implements OnI
   ngAfterViewInit(): void {
     const el = this.select.nativeElement;
     this.instance = M.FormSelect.init(el);
-
-
   }
 
   ngOnInit() {
