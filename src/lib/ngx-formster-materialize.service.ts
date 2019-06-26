@@ -1,3 +1,4 @@
+import { FormArrayComponent } from './form-array/form-array.component';
 import { FormAutocompleteComponent } from './form-autocomplete/form-autocomplete.component';
 import { FormTextareaComponent } from './form-textarea/form-textarea.component';
 import { FormSelectComponent } from './form-select/form-select.component';
@@ -37,6 +38,10 @@ export class NgxFormsterMaterializeService extends NgxFormsterComponentProvider 
       {
         type: 'autocomplete',
         component: FormAutocompleteComponent,
+      },
+      {
+        type: 'formArray',
+        component: FormArrayComponent,
       },
     ];
   }

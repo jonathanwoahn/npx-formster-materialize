@@ -9,6 +9,7 @@ import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
 import { FormSelectComponent } from './form-select/form-select.component';
 import { FormTextareaComponent } from './form-textarea/form-textarea.component';
 import { FormAutocompleteComponent } from './form-autocomplete/form-autocomplete.component';
+import { FormArrayComponent } from './form-array/form-array.component';
 
 const COMPONENTS = [
   FormInputComponent,
@@ -17,6 +18,7 @@ const COMPONENTS = [
   FormTextareaComponent,
   FormSelectComponent,
   FormAutocompleteComponent,
+  FormArrayComponent,
 ];
 
 @NgModule({
